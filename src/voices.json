@@ -1,0 +1,347 @@
+{
+  "kokoro": {
+    "name": "Kokoro TTS (Local)",
+    "languages": {
+      "es": {
+        "name": "Español",
+        "code": "e",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "ef_dora": "Dora (Femenina)",
+              "em_alex": "Alex (Masculino)",
+              "em_santa": "Santa (Masculino)"
+            }
+          }
+        }
+      },
+      "en-us": {
+        "name": "Inglés (EE.UU.)",
+        "code": "a",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "af_heart": "Heart (Femenina)",
+              "af_bella": "Bella (Femenina)",
+              "af_nicole": "Nicole (Femenina)",
+              "af_aoede": "Aoede (Femenina)",
+              "af_kore": "Kore (Femenina)",
+              "af_sarah": "Sarah (Femenina)",
+              "am_adam": "Adam (Masculino)",
+              "am_michael": "Michael (Masculino)",
+              "am_echo": "Echo (Masculino)",
+              "am_eric": "Eric (Masculino)",
+              "am_liam": "Liam (Masculino)",
+              "am_onyx": "Onyx (Masculino)"
+            }
+          }
+        }
+      },
+      "en-gb": {
+        "name": "Inglés (Británico)",
+        "code": "b",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "bf_emma": "Emma (Femenina)",
+              "bf_isabella": "Isabella (Femenina)",
+              "bf_alice": "Alice (Femenina)",
+              "bf_lily": "Lily (Femenina)",
+              "bm_george": "George (Masculino)",
+              "bm_lewis": "Lewis (Masculino)",
+              "bm_daniel": "Daniel (Masculino)",
+              "bm_fable": "Fable (Masculino)"
+            }
+          }
+        }
+      },
+      "fr": {
+        "name": "Francés",
+        "code": "f",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "ff_siwis": "Siwis (Femenina)"
+            }
+          }
+        }
+      },
+      "hi": {
+        "name": "Hindi",
+        "code": "h",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "hf_alpha": "Alpha (Femenina)",
+              "hm_omega": "Omega (Masculino)"
+            }
+          }
+        }
+      },
+      "it": {
+        "name": "Italiano",
+        "code": "i",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "if_sara": "Sara (Femenina)",
+              "im_nicola": "Nicola (Masculino)"
+            }
+          }
+        }
+      },
+      "ja": {
+        "name": "Japonés",
+        "code": "j",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "jf_alpha": "Alpha (Femenina)",
+              "jm_omega": "Omega (Masculino)"
+            }
+          }
+        }
+      },
+      "pt-br": {
+        "name": "Portugués (Brasil)",
+        "code": "p",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "pf_dora": "Dora (Femenina)",
+              "pm_alex": "Alex (Masculino)"
+            }
+          }
+        }
+      },
+      "zh": {
+        "name": "Mandarín",
+        "code": "z",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "zf_xiaobei": "Xiaobei (Femenina)",
+              "zm_yunyang": "Yunyang (Masculino)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "edge": {
+    "name": "Microsoft Edge TTS",
+    "languages": {
+      "es-mx": {
+        "name": "Español (México)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "es-MX-DaliaNeural": "Dalia (Femenina)",
+              "es-MX-JorgeNeural": "Jorge (Masculino)"
+            }
+          }
+        }
+      },
+      "es-es": {
+        "name": "Español (España)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "es-ES-AlvaroNeural": "Álvaro (Masculino)",
+              "es-ES-ElviraNeural": "Elvira (Femenina)"
+            }
+          }
+        }
+      },
+      "es-ar": {
+        "name": "Español (Argentina)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "es-AR-ElenaNeural": "Elena (Femenina)",
+              "es-AR-TomasNeural": "Tomás (Masculino)"
+            }
+          }
+        }
+      },
+      "es-co": {
+        "name": "Español (Colombia)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "es-CO-GonzaloNeural": "Gonzalo (Masculino)",
+              "es-CO-SalomeNeural": "Salomé (Femenina)"
+            }
+          }
+        }
+      },
+      "en-us": {
+        "name": "Inglés (EE.UU.)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "en-US-JennyNeural": "Jenny (Femenina)",
+              "en-US-GuyNeural": "Guy (Masculino)",
+              "en-US-AriaNeural": "Aria (Femenina)",
+              "en-US-ChristopherNeural": "Christopher (Masculino)",
+              "en-US-EricNeural": "Eric (Masculino)",
+              "en-US-MichelleNeural": "Michelle (Femenina)"
+            }
+          }
+        }
+      },
+      "en-gb": {
+        "name": "Inglés (Británico)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "en-GB-LibbyNeural": "Libby (Femenina)",
+              "en-GB-RyanNeural": "Ryan (Masculino)",
+              "en-GB-SoniaNeural": "Sonia (Femenina)"
+            }
+          }
+        }
+      },
+      "fr-fr": {
+        "name": "Francés (Francia)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "fr-FR-DeniseNeural": "Denise (Femenina)",
+              "fr-FR-HenriNeural": "Henri (Masculino)"
+            }
+          }
+        }
+      },
+      "de-de": {
+        "name": "Alemán (Alemania)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "de-DE-KatjaNeural": "Katja (Femenina)",
+              "de-DE-ConradNeural": "Conrad (Masculino)"
+            }
+          }
+        }
+      },
+      "it-it": {
+        "name": "Italiano (Italia)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "it-IT-ElsaNeural": "Elsa (Femenina)",
+              "it-IT-DiegoNeural": "Diego (Masculino)"
+            }
+          }
+        }
+      },
+      "ja-jp": {
+        "name": "Japonés (Japón)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "ja-JP-NanamiNeural": "Nanami (Femenina)",
+              "ja-JP-KeitaNeural": "Keita (Masculino)"
+            }
+          }
+        }
+      },
+      "pt-br": {
+        "name": "Portugués (Brasil)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "pt-BR-FranciscaNeural": "Francisca (Femenina)",
+              "pt-BR-AntonioNeural": "Antônio (Masculino)"
+            }
+          }
+        }
+      },
+      "zh-cn": {
+        "name": "Mandarín (China)",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "zh-CN-XiaoxiaoNeural": "Xiaoxiao (Femenina)",
+              "zh-CN-YunxiNeural": "Yunxi (Masculino)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "elevenlabs": {
+    "name": "ElevenLabs",
+    "languages": {
+      "es": {
+        "name": "Español",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "7QQzpAyzlKTVrRzQJmTE": "Dani (Español)",
+              "usTmJvQOCyW3nRcZ8OEo": "Dante (Español)",
+              "zl1Ut8dvwcVSuQSB9XkG": "Ninoska (Español)",
+              "pNInz6obpgDQGcFmaJgB": "Lucía (Español)",
+              "VR6AewLTigWG4xSOukaG": "Mateo (Español)",
+              "jBpfuIE2acCO8z3wKNLl": "Valentina (Español)",
+              "zcAOhNBS3c14rBihAFp1": "Santiago (Español)",
+              "XrExE9yKIg1WjnnlVkGX": "Camila (Español)"
+            }
+          }
+        }
+      },
+      "en": {
+        "name": "Inglés",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "EXAVITQu4vr4xnSDxMaL": "Emily (Multilingüe)",
+              "pMsXgVXv3BLzUgSXRplE": "Serena (Multilingüe)",
+              "flq6f7yk4E4fJM5XTYuZ": "Michael (Multilingüe)",
+              "oWAxZDx7w5VEj9dCyTzz": "Grace (Multilingüe)",
+              "21m00Tcm4TlvDq8ikWAM": "Rachel (Multilingüe)",
+              "ErXwobaYiN019PkySvjV": "Antoni (Multilingüe)"
+            }
+          }
+        }
+      },
+      "multilingual": {
+        "name": "Multilingüe",
+        "variants": {
+          "default": {
+            "name": "General",
+            "voices": {
+              "21m00Tcm4TlvDq8ikWAM": "Rachel",
+              "EXAVITQu4vr4xnSDxMaL": "Emily",
+              "pMsXgVXv3BLzUgSXRplE": "Serena",
+              "ErXwobaYiN019PkySvjV": "Antoni"
+            }
+          }
+        }
+      }
+    }
+  }
+}

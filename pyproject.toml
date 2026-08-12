@@ -1,0 +1,111 @@
+[project]
+name = "narrivox"
+version = "1.0.0"
+description = "Narrivox Studio Pro - AI-generated video content creation tool"
+requires-python = ">=3.11"
+authors = [
+    {name = "Narrivox Team"}
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "groq>=0.5.0",
+    "openai>=1.0.0",
+    "google-generativeai>=0.3.0",
+    "huggingface-hub>=0.20.0",
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "diffusers>=0.20.0",
+    "moviepy>=1.0.3",
+    "fpdf>=1.7.0",
+    "requests>=2.31.0",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "pytest-mock>=3.10.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.8.0",
+    "mypy>=1.0",
+    "basedpyright>=1.0",
+    "pre-commit>=3.0",
+    "radon>=6.0",
+    "vulture>=2.0",
+    "pylint>=3.0",
+    "bandit>=1.7",
+    "lizard>=1.0",
+    "mutmut>=2.0",
+    "wily>=1.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "ui"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "SIM", # flake8-simplify
+    "S",   # flake8-bandit (security)
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "S101",  # assert used (acceptable for tests)
+    "S608",  # hardcoded SQL expressions (acceptable for this project)
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]  # Allow asserts in tests
+"src/utils.py" = ["S603", "S606", "S607"]  # Safe system file opening commands
+"ui/frames/video_director_frame.py" = ["S603", "S606", "S607"]  # Safe system file opening commands
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+check_untyped_defs = true
+
+# Add overrides for third-party packages without stubs
+[[tool.mypy.overrides]]
+module = [
+    "customtkinter",
+    "groq",
+    "openai",
+    "google.generativeai",
+    "moviepy",
+    "fpdf",
+    "diffusers",
+    "transformers",
+]
+ignore_missing_imports = true
+
+[tool.basedpyright]
+pythonVersion = "3.11"
+typeCheckingMode = "standard"
+reportMissingTypeStubs = false
+reportUnknownMemberType = false
+reportUnknownArgumentType = false
+reportUnknownVariableType = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "--cov=src --cov=ui --cov-report=html --cov-report=term"

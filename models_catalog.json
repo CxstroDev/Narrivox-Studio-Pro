@@ -1,0 +1,101 @@
+{
+  "text": [
+    {
+      "id": "Qwen/Qwen2.5-1.5B-Instruct",
+      "name": "Qwen 2.5 1.5B Instruct",
+      "size_gb": 3.0,
+      "description": "Ligero y rápido, ideal para guiones en CPU. Soporta español perfectamente.",
+      "tags": ["recomendado", "cpu", "multilingüe"],
+      "requirements": {
+        "ram_gb": 4,
+        "gpu_optional": true
+      }
+    },
+    {
+      "id": "meta-llama/Llama-3.2-1B-Instruct",
+      "name": "Llama 3.2 1B Instruct",
+      "size_gb": 2.5,
+      "description": "Excelente comprensión contextual, muy rápido. Buen rendimiento en español.",
+      "tags": ["popular", "cpu"],
+      "requires_auth": true,
+      "requirements": {
+        "ram_gb": 4,
+        "gpu_optional": true
+      }
+    },
+    {
+      "id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "name": "Mistral 7B Instruct v0.3",
+      "size_gb": 14.0,
+      "description": "Muy creativo, calidad superior en narrativa. Requiere más RAM pero funciona en CPU.",
+      "tags": ["avanzado", "cpu", "creativo"],
+      "requires_auth": true,
+      "requirements": {
+        "ram_gb": 12,
+        "gpu_optional": true
+      }
+    },
+    {
+      "id": "google/gemma-2-2b-it",
+      "name": "Gemma 2 2B Instruct",
+      "size_gb": 4.5,
+      "description": "Modelo ligero de Google con buen soporte multilingüe y seguimiento de instrucciones.",
+      "tags": ["google", "cpu"],
+      "requirements": {
+        "ram_gb": 6,
+        "gpu_optional": true
+      }
+    }
+  ],
+  "image": [
+    {
+      "id": "OFA-Sys/small-stable-diffusion-v0",
+      "name": "Small Stable Diffusion v0",
+      "size_gb": 2.0,
+      "description": "Muy rápido (20-30s en CPU), ideal para prototipos y pruebas. Calidad aceptable.",
+      "tags": ["recomendado", "cpu", "rápido"],
+      "requirements": {
+        "ram_gb": 4,
+        "gpu_optional": true
+      }
+    },
+    {
+      "id": "stabilityai/sdxl-turbo",
+      "name": "SDXL Turbo",
+      "size_gb": 7.0,
+      "description": "Alta calidad en pocos pasos. Excelente para imágenes detalladas.",
+      "tags": ["avanzado", "cpu", "calidad"],
+      "requires_auth": true,
+      "requirements": {
+        "ram_gb": 10,
+        "gpu_optional": true
+      }
+    },
+    {
+      "id": "black-forest-labs/FLUX.1-schnell",
+      "name": "FLUX.1 Schnell",
+      "size_gb": 12.0,
+      "description": "Calidad fotorrealista superior, excelente para texto en imágenes.",
+      "tags": ["experimental", "cpu", "fotorrealista"],
+      "requires_auth": true,
+      "requirements": {
+        "ram_gb": 16,
+        "gpu_optional": true
+      }
+    }
+  ],
+  "tts": [
+    {
+      "id": "hexgrad/Kokoro-82M",
+      "name": "Kokoro 82M",
+      "size_gb": 0.33,
+      "description": "Voces naturales en varios idiomas. Requiere Docker para funcionar (puerto 8880).",
+      "tags": ["recomendado", "docker"],
+      "requirements": {
+        "ram_gb": 2,
+        "docker": true
+      },
+      "setup_instructions": "Ejecutar: docker run -d -p 8880:8880 ghcr.io/remsky/kokoro-fastapi-cpu:latest"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+﻿# Ignora archivos de compilación, entornos virtuales, artefactos de tests y bases de datos locales.
+
+# ===============================
+# Python / Django / Flask / FastAPI
+# ===============================
+
+###############################
+# Bytecode y artefactos Python
+###############################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+###############################
+# Distribución / packaging
+###############################
+.Python
+build/
+dist/
+.eggs/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+###############################
+# Logs
+###############################
+*.log
+pip-log.txt
+pytestdebug.log
+uvicorn.log
+gunicorn.log
+*.pid
+
+###############################
+# Tests y cobertura
+###############################
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+coverage.xml
+*.cover
+.hypothesis/
+
+###############################
+# Traducciones
+###############################
+*.mo
+*.pot
+
+###############################
+# Bases de datos y archivos locales
+###############################
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+
+###############################
+# Archivos web (Django / Flask)
+###############################
+media/
+staticfiles/
+instance/
+.webassets-cache
+
+###############################
+# Documentación
+###############################
+docs/_build/
+site/
+config_narrivox.json
+
+###############################
+# Jupyter / IPython
+###############################
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+###############################
+# Gestores de paquetes
+###############################
+__pypackages__/
+poetry.toml
+.pdm.toml
+
+###############################
+# Entornos virtuales
+###############################
+.env
+.env.*
+.envrc
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+###############################
+# Análisis estático / linters
+###############################
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+.ruff_cache/
+pyrightconfig.json
+
+###############################
+# Docker
+###############################
+docker-compose.override.yml
+narrivox.db
+narrivox.db-wal
+narrivox.db-shm
+
+###############################
+# IDEs / OS
+###############################
+.vscode/
+.spyderproject
+.spyproject
+.ropeproject
+.DS_Store
+
+logs/narrivox.log
+broll_cache/
+models/
+temp_preview.mp3
+ui/frames/video_director_frame.py.bak
