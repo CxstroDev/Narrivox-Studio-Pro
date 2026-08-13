@@ -18,12 +18,15 @@ __pycache__/
 .Python
 build/
 dist/
+dist_final5/
 .eggs/
 wheels/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
+build_windows.ps1
 *.egg
+Narrivox.spec
 MANIFEST
 
 ###############################

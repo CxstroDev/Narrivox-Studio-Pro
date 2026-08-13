@@ -4,11 +4,15 @@ import secrets
 import sys
 import traceback
 
-import static_ffmpeg
-
 from src.utils import logger
 
-static_ffmpeg.add_paths()
+try:
+    import static_ffmpeg
+    static_ffmpeg.add_paths()
+except Exception as exc:
+    # FFmpeg es opcional al arrancar; las funciones de audio informarán si falta.
+    static_ffmpeg = None
+    logger.warning("FFmpeg estático no disponible: %s", exc)
 
 # --- BLOQUE DE IMPORTACIÓN DE PYDUB ---
 try:

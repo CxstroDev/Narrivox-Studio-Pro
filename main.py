@@ -2,6 +2,12 @@
 import os
 import sys
 
+# PyInstaller no siempre configura Tcl/Tk automáticamente.
+if getattr(sys, "frozen", False):
+    _bundle_dir = getattr(sys, "_MEIPASS", os.path.dirname(sys.executable))
+    os.environ["TCL_LIBRARY"] = os.path.join(_bundle_dir, "_tcl_data")
+    os.environ["TK_LIBRARY"] = os.path.join(_bundle_dir, "_tk_data")
+
 import customtkinter as ctk
 from huggingface_hub import login
 from src.config_manager import load_config

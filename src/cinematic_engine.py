@@ -1,4 +1,5 @@
 # src/cinematic_engine.py
+from __future__ import annotations
 import os
 import shutil
 from urllib.parse import urlparse
@@ -8,19 +9,18 @@ import requests
 from src.utils import logger
 
 try:
-    from moviepy import (
-        AudioFileClip,
+    # Importar submódulos directamente evita ciclos durante el arranque congelado.
+    from moviepy.audio.io.AudioFileClip import AudioFileClip
+    from moviepy.video.VideoClip import ImageClip, TextClip, VideoClip
+    from moviepy.video.compositing.CompositeVideoClip import (
         CompositeVideoClip,
-        ImageClip,
-        TextClip,
-        VideoClip,
-        VideoFileClip,
         concatenate_videoclips,
     )
+    from moviepy.video.io.VideoFileClip import VideoFileClip
     MOVIEPY_AVAILABLE = True
-except ImportError:
+except ImportError as exc:
     MOVIEPY_AVAILABLE = False
-    logger.warning("MoviePy no está instalado. Motor Cinemático no funcionará.")
+    logger.warning("MoviePy no está disponible (%s). Motor Cinemático no funcionará.", exc)
 
 try:
     from gradio_client import Client, handle_file
@@ -501,7 +501,7 @@ class CinematicEngine:
                     else:
                         bg_music = bg_music.subclipped(0, duration)
                     
-                    from moviepy import CompositeAudioClip
+                    from moviepy.audio.AudioClip import CompositeAudioClip
                     final_audio = CompositeAudioClip([audio_clip, bg_music])
                 except Exception as e:
                     logger.error(f"Error al añadir música de fondo: {e}")
