@@ -23,7 +23,7 @@ from ui.frames.proyectos_frame import ProyectosFrame
 class MainWindow(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Narrivox Studio Pro v14")
+        self.title("Narrivox Studio Pro")
         self.geometry("1400x900") # Aumentado para mejor visualización del timeline
         self.minsize(1200, 800)
         self.configure(fg_color=st.COLOR_BG)
