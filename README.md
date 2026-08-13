@@ -175,7 +175,18 @@ Las pruebas de interfaz se omiten cuando no existe una sesión gráfica disponib
 
 ## Licencia
 
-Este repositorio todavía no declara una licencia. Antes de hacerlo público, añade un archivo `LICENSE` con la licencia que quieras utilizar y revisa las condiciones de los servicios, modelos y bibliotecas de terceros integrados.
+Narrivox Studio Pro se distribuye bajo la Apache License 2.0.
+Esta licencia permite utilizar, modificar y distribuir el código, incluyendo usos comerciales, siempre que se conserve el aviso de copyright y la licencia correspondiente.
+
+Consulta el texto completo en el archivo LICENSE o en:
+https://www.apache.org/licenses/LICENSE-2.0
+Copyright 2026 CxstroDev — Narrivox Studio Pro.
+
+##Dependencias y servicios externos
+
+El proyecto utiliza bibliotecas, modelos y servicios de terceros que pueden estar sujetos a sus propias licencias y condiciones de uso. La licencia Apache 2.0 de Narrivox aplica únicamente al código original de este proyecto.
+
+Antes de distribuir una versión, revisa las condiciones de las APIs, modelos de inteligencia artificial, bibliotecas y recursos externos incluidos.
 
 ## Autoría y propósito
 
