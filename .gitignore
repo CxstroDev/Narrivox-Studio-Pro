@@ -17,6 +17,7 @@ __pycache__/
 ###############################
 .Python
 build/
+build_final5/
 dist/
 dist_final5/
 .eggs/
